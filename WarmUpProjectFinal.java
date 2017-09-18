@@ -11,7 +11,7 @@ public class WarmUpProjectFinal {
 	public static void main(String[] args) throws Exception{
     	
     	File inputFile = new File("C://Users//Burraque Khattak//Desktop//ENCtext.txt");		// create File object inputFile and indicate location of file	
-        Scanner scan = new Scanner(inputFile);												// create Scanner class object and scan the inputFile
+        Scanner scan = new Scanner(inputFile); //												// create Scanner class object and scan the inputFile
     
         while(scan.hasNextLine()){															// while there are lines in the file with text
             
@@ -25,12 +25,12 @@ public class WarmUpProjectFinal {
             int digit2 = Integer.parseInt(secondDigit);										// do the same for digit 2
 
             if (firstLetter.equals("E")){													// check if first letter is an E and send to Encrypt function
-            	encryptFunction(restLine, digit1);
+            	encryptFunction(restLine, digit1);											// send to enc func twice
                 encryptFunction(restLine, digit2);
             }
             else{																			// if not then send to decrypt
             	decryptFunction(restLine, digit1); 
-            	decryptFunction(restLine, digit2);
+            	decryptFunction(restLine, digit2);											// send to decrypt func twice
             }    
          }
     }
